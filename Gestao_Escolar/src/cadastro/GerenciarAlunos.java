@@ -13,7 +13,6 @@ import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
