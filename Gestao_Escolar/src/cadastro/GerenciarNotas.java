@@ -9,7 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -73,7 +72,7 @@ public class GerenciarNotas extends JFrame {
 				"Nota 4", "Frequência", "Situação" }, 0);
 		table = new JTable(tableModel);
 		panel.add(new JScrollPane(table), BorderLayout.CENTER);
-		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // Desabilita o redimensionamento automático
+		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
 		// Centralizar texto nas células
 		DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
@@ -106,7 +105,7 @@ public class GerenciarNotas extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				abrirTelaAdicionarAtualizarNotas();
-				recarregarTabela(); // Adicione esta linha
+				recarregarTabela();
 			}
 		});
 
